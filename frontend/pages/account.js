@@ -1,5 +1,5 @@
 const AccountPage = () => (
-  <p>Hello</p>
+  <p>Hello I am the Account page!</p>
 );
 
 export default AccountPage;

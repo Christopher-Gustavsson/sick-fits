@@ -1,5 +1,5 @@
 const ProductsPage = () => (
-  <p>Hello</p>
+  <p>Hello I am the products page!</p>
 );
 
 export default ProductsPage;

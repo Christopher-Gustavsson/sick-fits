@@ -1,10 +1,20 @@
 import Document, { Html, Head, NextScript, Main } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
+
+  // fixes styled components flicker on server render
+  static getInitialProps({ renderPage }){
+    const sheet = new ServerStyleSheet();
+    const page = renderPage(App => props => sheet.collectStyles(<App {...props}/>));
+    const styleTags = sheet.getStyleElement();
+    return { ...page, styleTags };
+  };
+  
   render(){
     return(
       <Html lang="en">
-        {/* <Head></Head> */}
+        <Head />
         <body>
           <Main />
           <NextScript />

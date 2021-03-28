@@ -1,5 +1,5 @@
-const OrderPage = () => (
-  <p>Hello</p>
+const OrdersPage = () => (
+  <p>Hello I am the orders page!</p>
 );
 
-export default OrderPage;
+export default OrdersPage;

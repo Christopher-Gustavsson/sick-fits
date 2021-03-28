@@ -1,5 +1,5 @@
 const IndexPage = () => (
-  <p>Hello</p>
+  <p>Hello I am the home page!</p>
 );
 
 export default IndexPage;
